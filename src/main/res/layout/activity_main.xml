@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#EAEAEA" >
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="MapPhotos"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/main_top_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/increase"
+            android:onClick="OnMenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/main_top_gallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gallery"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@id/main_top_menu" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/photoListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

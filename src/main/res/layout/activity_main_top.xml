@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#CDCDC1" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="MapPhotos"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/main_top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addto"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/main_top_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gallery"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/main_top_menu" />
+</RelativeLayout>

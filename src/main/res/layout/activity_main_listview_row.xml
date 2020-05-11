@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:divider="@drawable/border"
+    android:showDividers="end"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/imageViewThumb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/gallery" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:hint="相册名称"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textViewNum"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="start|center"
+            android:paddingStart="20dp"
+            android:hint="还没有照片哦"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewMap"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/map" />
+</LinearLayout>

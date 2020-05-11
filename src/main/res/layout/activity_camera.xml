@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        camera_flash="auto"
+        camera_facing="back"
+        camera_focus="continuous"
+        camera_permissions="camera">
+
+        <ImageView
+            android:id="@+id/reverseCamera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_gravity="end" />
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/bottom_layout_camera"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:layout_gravity="bottom" >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/cameraBack"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/down"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_centerVertical="true" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/takePictureBtn"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:background="@drawable/button_circle_shape" />-->
+<!--        </RelativeLayout>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/previewImage"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" >-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/bottom_layout_preview"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="bottom" >-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/previewBack"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:background="@drawable/preview_cancel"-->
+<!--                    android:layout_marginStart="40dp"-->
+<!--                    android:layout_centerVertical="true" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/savePicture"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:background="@drawable/preview_save" />-->
+<!--            </RelativeLayout>-->
+<!--        </ImageView>-->
+<!--        com.cjt2325.cameralibrary-->
+        <com.cjt2325.cameralibrary.CaptureLayout
+            android:id="@+id/capture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+        <com.cjt2325.cameralibrary.FoucsView
+            android:id="@+id/fouce_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+    </com.wonderkiln.camerakit.CameraView>
+
+
+
+</LinearLayout>
